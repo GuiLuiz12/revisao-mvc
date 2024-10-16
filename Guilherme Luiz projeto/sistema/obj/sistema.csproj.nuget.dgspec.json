@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\36992072854\\Desktop\\Saep-revisao\\Guilherme Luiz projeto\\sistema\\sistema.csproj": {}
+    "C:\\Users\\36992072854\\Desktop\\revisao-mvc\\Guilherme Luiz projeto\\sistema\\sistema.csproj": {}
   },
   "projects": {
-    "C:\\Users\\36992072854\\Desktop\\Saep-revisao\\Guilherme Luiz projeto\\sistema\\sistema.csproj": {
+    "C:\\Users\\36992072854\\Desktop\\revisao-mvc\\Guilherme Luiz projeto\\sistema\\sistema.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\36992072854\\Desktop\\Saep-revisao\\Guilherme Luiz projeto\\sistema\\sistema.csproj",
+        "projectUniqueName": "C:\\Users\\36992072854\\Desktop\\revisao-mvc\\Guilherme Luiz projeto\\sistema\\sistema.csproj",
         "projectName": "sistema",
-        "projectPath": "C:\\Users\\36992072854\\Desktop\\Saep-revisao\\Guilherme Luiz projeto\\sistema\\sistema.csproj",
+        "projectPath": "C:\\Users\\36992072854\\Desktop\\revisao-mvc\\Guilherme Luiz projeto\\sistema\\sistema.csproj",
         "packagesPath": "C:\\Users\\36992072854\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\36992072854\\Desktop\\Saep-revisao\\Guilherme Luiz projeto\\sistema\\obj\\",
+        "outputPath": "C:\\Users\\36992072854\\Desktop\\revisao-mvc\\Guilherme Luiz projeto\\sistema\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\36992072854\\AppData\\Roaming\\NuGet\\NuGet.Config",
