@@ -1,26 +1,45 @@
-﻿@{
-    ViewData["Title"] = "Login";
+﻿﻿@{
+    ViewData["Title"] = "Atividades";
 }
 
-
-<form asp-controller="Login" asp-action="Logar" method="post" class="w-50 p-5 mx-auto mt-5 shadow rounded d-flex flex-column align-items-center gap-4">
-
-    <h2>Bem vindo</h2>
-
-    <div class="w-100">
-        <label class="form-label">Email</label>
-        <input type="email" name="email" class="form-control" />
-    </div>
-
-    <div class="w-100">
-        <label class="form-label">Senha</label>
-        <input type="password" name="senha" class="form-control" />
-    </div>
-
-    <button type="submit" class="btn btn-primary px-4">Entrar</button>
-</form>
-@if (TempData["Mensagem"] != null)
+@if (ViewBag.NomeProfessor == null)
 {
-    <p class="text-center mt-5 text-danger">@TempData["Mensagem"]</p>
+    <a asp-controller="Login">Login</a>
 }
+else
+{
+    @* cadastrar turma *@
 
+    <form asp-controller="Atividade" asp-action="CadastrarAtividade">
+        <label>Nome da atividade</label>
+        <input type="hidden" name="turmaId" value="@ViewBag.TurmaId" />
+
+        <input type="text" name="nomeAtividade" placeholder="Nome" required />
+        <button type="submit">Cadastrar Atividade</button>
+    </form>
+
+
+    @* nome turma  *@
+    <h4>Turma: @ViewBag.NomeTurma</h4>
+
+    @* tabela *@
+    <table>
+        <thead>
+            <tr>
+                <th>Número</th>
+                <th>Nome atividade</th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var atividade in Model)
+            {
+                <tr>
+                    <td>@atividade.AtividadeId</td>
+                    <td>@atividade.Descricao</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
